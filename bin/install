@@ -31,7 +31,7 @@ install_ruby() {
   fi
 
   # shellcheck disable=SC2086
-  echo "$patches" | $(ruby_build_path) ${opts} "$version" "$install_path"
+  echo "$patches" | $(ruby_build_path) ${opts} "$version" "$install_path" --verbose
 }
 
 fetch_patches() {
